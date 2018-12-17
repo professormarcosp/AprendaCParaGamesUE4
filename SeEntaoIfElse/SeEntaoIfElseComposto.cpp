@@ -4,7 +4,8 @@
 
 int main()
 {
-	_tsetlocale(LC_ALL, "portuguese");
+	//aqui faltou o _T
+	_tsetlocale(LC_ALL, _T("portuguese"));
 	bool bFezSol, bCarroPronto, bSalarioDepositado;
 	bool bAcesso;
 	std::string SenhaDeAcesso = "cmaismais";
