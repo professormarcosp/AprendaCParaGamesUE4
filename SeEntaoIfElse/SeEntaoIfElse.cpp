@@ -11,22 +11,22 @@ int main()
 	std::cout << "Digite a senha de acesso: ";
 	std::cin >> SenhaDigitada;
 
-	/*Se a senha digitada pelo usuário e armazenada na variável SenhaDigitada for igual a senha de acesso as instruções após o if serão executadas pois a condição foi verdadeira true 1 */
+	/*Se a senha digitada pelo usuÃ¡rio e armazenada na variÃ¡vel SenhaDigitada for igual a senha de acesso as instruÃ§Ãµes apÃ³s o if serÃ£o executadas pois a condiÃ§Ã£o foi verdadeira true 1 */
 	if (SenhaDigitada == SenhaDeAcesso)
 	{
 		std::cout << "\nAcesso Permitido!" << "\n";
 		//aqui aproveitamos para indicar que o acesso foi concedido
-		//através de outra variável booleana bAcesso
+		//atravÃ©s de outra variÃ¡vel booleana bAcesso
 		bAcesso = true;
 		system("PAUSE");
 	}
-	/*Se a condição for falsa então as isntruções do else serão executadas*/
+	/*Se a condiÃ§Ã£o for falsa entÃ£o as isntruÃ§Ãµes do else serÃ£o executadas*/
 	else
 	{
 		std::cout << "\n Acesso Negado!!!" << "\n";
 		system("PAUSE");
-		exit(0); //sai do programa, força o fechamento da aplicação
+		exit(0); //sai do programa, forÃ§a o fechamento da aplicaÃ§Ã£o
 	}
 
-	
+	return 0;
 }
