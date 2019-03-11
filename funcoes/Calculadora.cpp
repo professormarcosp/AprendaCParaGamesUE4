@@ -1,9 +1,9 @@
-/* ENTRADA: dois n˙meros reais
-PROCESSAMENTO:funcoes que calculam soma, subtraÁ„o, multiplicaÁ„o e divis„o
-SAÕDA:  (num1 + num2,  num1 ñ num2, num1 * num2, num1/num2)
+/* ENTRADA: dois n√∫meros reais
+PROCESSAMENTO:funcoes que calculam soma, subtra√ß√£o, multiplica√ß√£o e divis√£o
+SA√çDA:  (num1 + num2,  num1 ‚Äì num2, num1 * num2, num1/num2)
 */
 #include <iostream>
-//PROT“TIPOS DAS FUNCOES
+//PROT√íTIPOS DAS FUNCOES
 float Soma(float num1, float num2);
 float Subtracao(float num1, float num2);
 float Multiplicacao(float num1, float num2);
@@ -12,7 +12,8 @@ float Divisao(float num1, float num2);
 
 int main()
 {
-	int Num1, Num2;
+	//aqui declare como float
+	float Num1, Num2;
 
 	std::cout << "\nDigite Primeiro Numero: ";
 	std::cin >> Num1;
