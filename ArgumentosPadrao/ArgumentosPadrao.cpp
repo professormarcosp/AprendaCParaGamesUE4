@@ -1,15 +1,17 @@
 #include <iostream>
-//PROTOTIPO
-//você pode colocar valores padrões no protótipo
-//e então quando você chamar a função poderá omitir
-//argumentos pois a função irá utilizar o argumento padrão se você não informar o argumento quando da chamada da função.
-//Para colocar um valor padrão basta colocar =
+//PROTÃ’TIPO
+//vocÃª pode colocar valores padrÃµes no protÃ³tipo
+//e entÃ£o quando vocÃª chamar a funÃ§Ã£o poderÃ¡ omitir
+//argumentos pois a funÃ§Ã£o irÃ¡ utilizar o argumento padrÃ£o se vocÃª nÃ£o informar o argumento quando da chamada da funÃ§Ã£o.
+//Para colocar um valor padrÃ£o basta colocar =
 void Coordenadas(int x, int y, int z = 1);
-//Você não é obrigado a colocar todos os argumentos padrão. Porém se deixar algum de fora deve seguir a regra que precisa colocar da direita para esquerda
+//VocÃª nÃ£o Ã© obrigado a colocar todos os argumentos padrÃ£o. PorÃ©m se deixar algum de fora deve seguir a regra que precisa
+//colocar da direita para esquerda
 
 int main()
 {
-	//apesar da função solicitar na chamada a colocação de 3 argumentos que serão enviados aos parâmetros x, y e z. Esta chamada sem você colocar argumentos irá funcionar, pois eles tem argumentos pa
+	//apesar da funÃ§Ã£o solicitar na chamada a colocaÃ§Ã£o de 3 argumentos que serÃ£o enviados aos parÃ¢metros
+	//x, y e z. Esta chamada sem vocÃª colocar argumentos irÃ¡ funcionar, pois eles tem argumentos pa
 	Coordenadas(5,6);
 	system("PAUSE");
 	return 0;
