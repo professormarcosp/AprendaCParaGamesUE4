@@ -86,12 +86,6 @@ std::string Conta::GetTitular()
 	return this->Titular;
 }
 
-void Conta::GetEnderecoThis()
-{
-	std::cout << "\nthis contem dentro dele o endereco: " << this << "\n";
-
-}
-
 void Conta::SetBanco(std::string Banco)
 {
 	//Como o compilador vai saber se Bancó é variável local ou o atributo da classe Conta?
