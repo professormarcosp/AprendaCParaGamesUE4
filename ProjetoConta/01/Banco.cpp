@@ -1,22 +1,25 @@
-//Na fun√ß√£o main() iremos instanciar objetos
-//desta forma ela precisa incluir as declara√ß√µes da classe Conta
+//Na funÁ„o main() iremos instanciar objetos
+//desta forma ela precisa incluir as declaraÁıes da classe Conta
 #include "Conta.h"
 #include <iostream>
 #include <string>
 
 int main()
-{ 
-  //como est√° desta forma o objeto seria criado com o construtor autom√°tico
-	//conhecido por construtor Padr√£o ou Default
-	Conta ContaCliente01("Itau", 2222, 5555, "Marcos", 100000);
+{
+	//Criamos um  objeto ContaCliente01 do tipo Conta
+	//Est· alocado na Stack
+	Conta Cliente00;
+	//como est· desta forma o objeto seria criado com o construtor autom·tico
+	//conhecido por construtor Padr„o ou Default
+	Conta ContaCliente01("Itau",2222,5555,"Marcos",100000);
 	//Agora vai funcionar... Pois temos os argumentos para o construtor
 	 //Criamos um  objeto ContaCliente02 do tipo Conta
-	//Est√° alocado na Stack
+	//Est· alocado na Stack
 	Conta ContaCliente02;
-	//Erro desaparece pois agora tem o contrutor vazio, padr√£o, default
+	//Erro desaparece pois agora tem o contrutor vazio, padr„o, default
 
-	//Os objetos foram criados(instanciados) e colocados na mem√≥ria RAM
-	//Abaixo o debug mostra estes objetos e os valores atuais dos atributos(das vari√°veis) deles
+	//Os objetos foram criados(instanciados) e colocados na memÛria RAM
+	//Abaixo o debug mostra estes objetos e os valores atuais dos atributos(das vari·veis) deles
 
 	std::cout << "Endereco Memoria Objeto ContaCliente01: " << &ContaCliente01 << "\n";
 	ContaCliente01.GetEnderecoThis();
@@ -25,7 +28,7 @@ int main()
 
 
 	ContaCliente01.SetBanco("Bradesco");
-	//A string "Bradesco" foi enviada como par√¢metro para fun√ß√£o SetBanco
+	//A string "Bradesco" foi enviada como par‚metro para funÁ„o SetBanco
 	ContaCliente01.SetAgencia(1234);
 	ContaCliente01.SetNumConta(9999);
 	ContaCliente01.SetTitular("Fulano");
@@ -37,11 +40,12 @@ int main()
 	ContaCliente02.SetNumConta(1111);
 	ContaCliente02.SetTitular("Beltrano");
 
-	//o objeto ContaCliente02 s√©r√° enviado como argumento para a fun√ß√£o transferir
+	//o objeto ContaCliente02 sÈr· enviado como argumento para a funÁ„o transferir
 	ContaCliente01.Transferir(ContaCliente02, 2000);
 	ContaCliente02.Sacar(500);
 	ContaCliente02.Sacar(5000);
 
-system("PAUSE");
- return 0;
-} 
+
+	system("PAUSE");
+	return 0;
+}
