@@ -29,7 +29,6 @@ public:
 	int GetAgencia();
 	int GetNumConta();
 	std::string GetTitular();
-	void GetEnderecoThis();
 	void SetBanco(std::string Banco);
 	void SetAgencia(int Agencia);
 	void SetTitular(std::string Titular);
