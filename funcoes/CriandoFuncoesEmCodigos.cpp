@@ -1,7 +1,9 @@
+/*Aten√ß√£o C√≥digo modificado, veja as instru√ß√µes dos motivos como recurso anexo a aula
+Agradecimento ao aluno Anderson Cardoso que identificou o erro*/
 #include <iostream>
 #include <locale.h>
 
-//protÛtipos das funÁıes
+//prot√≥tipos das fun√ß√µes
 void ExibirMenu();
 int RetornarEscolha();
 void ProcessarEscolha(int TipoEscolha);
@@ -9,45 +11,47 @@ void ProcessarEscolha(int TipoEscolha);
 
 int main()
 {
-	//Exibe o menu opÁıes chamando a funÁ„o Exibir Menu
+	//Exibe o menu op√ß√µes chamando a fun√ß√£o Exibir Menu
 	ExibirMenu();
 	system("PAUSE");
 	return 0;
 }
 
-//ImplementaÁ„o das funÁıes
+//Implementa√ß√£o das fun√ß√µes
 
-//a funÁ„o n„o retorna nada, logo o tipo de retorno È vazio(void). AlÈm disso a funÁ„o n„o possui nenhuma vari·vel local(Par‚metros). Como n„o retorna nada n„o precisamos usar comando return
+//a fun√ß√£o n√£o retorna nada, logo o tipo de retorno √© vazio(void). Al√©m disso a fun√ß√£o n√£o possui nenhuma vari√°vel local(Par√¢metros). Como n√£o retorna nada n√£o precisamos usar comando return
 void ExibirMenu()
 {
 	setlocale(LC_ALL, "portuguese");
-	
-	do // as instruÁıes abaixo ser„o executadas pelo menos uma vez!
+
+	do // as instru√ß√µes abaixo ser√£o executadas pelo menos uma vez!
 	{
 		std::cout << "****Tickets Cinema****" << std::endl;
 		std::cout << "\n1 - Para Meia Entrada\n";
 		std::cout << "\n2 - Para Inteira\n";
 		std::cout << "\n3 - Sair";
-		// TO DO FunÁ„o Retornar EScolha
+		// TO DO Fun√ß√£o Retornar EScolha
 
-		//Aqui a funÁ„o chama outra funÁ„o e passar como argumento para a funÁ„o ProcessrEscolha a vari·vel escolha que contÈm o que foi digitado pelo usu·rio como opÁ„o de escolha de menu
+		//Aqui a fun√ß√£o chama outra fun√ß√£o e passar como argumento para a fun√ß√£o ProcessrEscolha a vari√°vel escolha que cont√©m o que foi digitado pelo usu√°rio como op√ß√£o de escolha de menu
+
+		//aqui a fun√ß√£o processar escolha deve receber como par√¢metro um inteiro. Colocamos abaixo a chamada da fun√ß√£o RetornarEscolha que ao ser executada ir√° retornar (Return) um inteiro que foi digitado pelo usu√°rio
 		
-		//aqui a funÁ„o processar escolha deve receber como par‚metro um inteiro. Colocamos abaixo a chamada da funÁ„o RetornarEscolha que ao ser executada ir· retornar (Return) um inteiro que foi digitado pelo usu·rio
-		ProcessarEscolha(RetornarEscolha());
-	} while (escolha != 3);//enquanto escolha for diferente de 3 o menu vai aparecer! pois vocÍ est· solicitando que fique em loop atÈ que escolha seja igual a 3 e resultado seja falso saindo do loop do-while
+	} while (RetornarEscolha() != 3);//enquanto o retorno da fun√ß√£o RetornarEscolha for diferente de 3 o menu vai aparecer! pois voc√™ est√° solicitando que fique em loop at√© que escolha seja igual a 3 e resultado seja falso saindo do loop do-while
 }
 
 int RetornarEscolha()
 {
 	int escolha = 0;
-	std::cout << "\nEscolha sua opÁ„o: ";
+	std::cout << "\nEscolha sua op√ß√£o: ";
 	std::cin >> escolha;
+	//Colocar a chamada da fun√ß√£o ProcessarEscolha
+	ProcessarEscolha(escolha);
 	return escolha;
 }
 
-//ProcessarEscolha recebe como par‚metro um numero inteiro
-//e armazena este argumento passado no par‚metro TipoEscolha que È uma vari·vel local a esta funÁ„o. Significa que esta vari·vel somente existe na memÛria quando a funÁ„o est· sendo executada. Quando a funÁ„o chegar a seu final esta vari·vel deixa de existir na memÛria.
-//Portanto funÁıes s„o fundamentais para otimizar o uso de memÛria, pois se todas estas vari·veis estivessem na funÁ„o main elas somente seriam destruidas quando o programa fosse fechado.
+//ProcessarEscolha recebe como par√¢metro um numero inteiro
+//e armazena este argumento passado no par√¢metro TipoEscolha que √© uma vari√°vel local a esta fun√ß√£o. Significa que esta vari√°vel somente existe na mem√≥ria quando a fun√ß√£o est√° sendo executada. Quando a fun√ß√£o chegar a seu final esta vari√°vel deixa de existir na mem√≥ria.
+//Portanto fun√ß√µes s√£o fundamentais para otimizar o uso de mem√≥ria, pois se todas estas vari√°veis estivessem na fun√ß√£o main elas somente seriam destruidas quando o programa fosse fechado.
 void ProcessarEscolha(int TipoEscolha)
 {
 	switch (TipoEscolha)
@@ -58,6 +62,7 @@ void ProcessarEscolha(int TipoEscolha)
 		break;
 	case 3: std::cout << "\nSaindo Menu Tickets...\n";
 		break;
-	default: std::cout << "\nOpÁ„o Inv·lida!!!\n";
+	default: std::cout << "\nOp√ß√£o Inv√°lida!!!\n";
 	}
+	
 }
