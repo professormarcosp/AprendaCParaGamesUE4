@@ -60,7 +60,8 @@ E por que esperar?
 
 Vamos começar? Aplique o cupom  GITHUB1999  e garanta o seu desconto!
 
-Comece ainda hoje a sua trajetória de criação de Games com a  fantástica Unreal Engine 4, é só clicar no botão! :)
+Comece ainda hoje a sua trajetória de criação de Games com a  fantástica Unreal Engine 4, é só clicar no botão! 
+Aproveite e se inscreva em: https://www.udemy.com/cmaismaisbasico/   :)
 
 E então? 
 
