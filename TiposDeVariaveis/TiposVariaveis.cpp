@@ -32,4 +32,5 @@ int main()
 	std::cout << "Endereco Carregado na Memoria: " << (void *)&Caractere2 << "\n";
  
 	system("PAUSE");
+	return 0;
 }
