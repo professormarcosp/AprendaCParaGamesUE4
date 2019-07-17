@@ -9,10 +9,10 @@ int main()
 	char Caractere = '3';
 	char Caractere2 = 'k';
 	bool bAchou;
-	//um é true (verdadeiro)
+	//um Ã© true (verdadeiro)
 	bAchou = 1;
 	std::cout << "Valor de bAchou: " << bAchou << "\n";
-	//zero é falso
+	//zero Ã© falso
 	bAchou = 0;
 	std::cout << "Valor de bAchou: " << bAchou << "\n";
 	bAchou = true;
@@ -21,7 +21,7 @@ int main()
 	std::cout << "Valor de bAchou: " << bAchou << "\n";
 	
 	//qualquer coisa diferente de zero vira true ao ser atribuido
-	//a uma variável do tipo bool!
+	//a uma variÃ¡vel do tipo bool!
 	bAchou = 'd';
 	std::cout << "Valor de bAchou: " << bAchou << "\n";
 	bAchou = "1023460A";
@@ -37,19 +37,19 @@ int main()
 	std::cout << "Endereco Carregado na Memoria: " << &Numero << "\n";
 	
 	std::cout << "Valor Numero2: " << Numero2 << std::endl;
-	std::cout << "Tamanho da Variavel Numero: " << sizeof(Numero2) << " Bytes" << "\n";
+	std::cout << "Tamanho da Variavel Numero2: " << sizeof(Numero2) << " Bytes" << "\n";
 	std::cout << "Endereco Carregado na Memoria: " << &Numero2 << "\n";
 
 	std::cout << "Valor Numero3: " << std::setprecision(12) << Numero3 << std::endl;
-	std::cout << "Tamanho da Variavel Numero: " << sizeof(Numero3) << " Bytes" << "\n";
+	std::cout << "Tamanho da Variavel Numero3: " << sizeof(Numero3) << " Bytes" << "\n";
 	std::cout << "Endereco Carregado na Memoria: " << &Numero3 << "\n";
 
 	std::cout << "Valor Caractere: " << Caractere << std::endl;
-	std::cout << "Tamanho da Variavel Numero: " << sizeof(Caractere) << " Bytes" << "\n";
+	std::cout << "Tamanho da Variavel Caractere: " << sizeof(Caractere) << " Bytes" << "\n";
 	std::cout << "Endereco Carregado na Memoria: " << (void *)&Caractere << "\n";
 
 	std::cout << "Valor Caractere2: " << Caractere2 << std::endl;
-	std::cout << "Tamanho da Variavel Numero: " << sizeof(Caractere2) << " Bytes" << "\n";
+	std::cout << "Tamanho da Variavel Caractere2: " << sizeof(Caractere2) << " Bytes" << "\n";
 	std::cout << "Endereco Carregado na Memoria: " << (void *)&Caractere2 << "\n";
  
 	system("PAUSE");
