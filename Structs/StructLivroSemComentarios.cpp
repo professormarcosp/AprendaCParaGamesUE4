@@ -1,7 +1,6 @@
 #include <iostream>
-#include <cstring>
 #include <string>
-#include <locale>
+
 
 struct Livro
 {
@@ -13,7 +12,6 @@ struct Livro
 
 int main()
 {
-	setlocale(LC_ALL, "");
 	struct Livro livro;
 	
 	std::cout << "***Cadastro de Livro***" << "\n";
