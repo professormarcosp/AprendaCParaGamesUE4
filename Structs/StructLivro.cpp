@@ -15,8 +15,6 @@ struct Livro
 	std::string Editora;
 };
 
-void ImprimiDados(struct Livro Dados);
-
 int main()
 {
 	setlocale(LC_ALL, "");
