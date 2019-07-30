@@ -20,7 +20,10 @@ int main()
 {
 	Aluno Aluno01 = { 111111, "Fulano", "TI", 4, 990.50 };
 	Aluno* Aluno02 = new Aluno;
+	Aluno Aluno03;
+	AlterarDados(&Aluno03);
 	system("CLS");
+	MostrarDados(&Aluno03);
 	std::cout << "\nANTES DE MODIFICAR\n";
 	MostrarDados(Aluno01);
 	AlterarDados(Aluno01);
@@ -30,9 +33,6 @@ int main()
 	AlterarDados(Aluno02);
 	std::cout << "\nDEPOIS DE MODIFICAR COM PONTEIROS \n";
 	MostrarDados(Aluno02);
-
-
-
 	system("PAUSE");
 	return 0;
 }
