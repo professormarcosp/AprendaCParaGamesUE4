@@ -1,42 +1,41 @@
 #include <iostream>
-//Para poder usar std::getline
 #include <string>
-/*Crie um programa que receba os  dados, ID, Título, Autor, Editora e Ano de um livro e coloque estes dados na tela.
-*/
-//Aqui você está apenas criando um tipo de dados que será usando como modelo para construção de variáveis na memória. Um erro comum é tentar usar o nome Livro diretamente no código. Contudo Livro não existe na memória RAM, só irão existir variáveis(o que inclui objetos, pois objetos são também variáveis) que sejam criadas tendo como modelo esta struct.. Ex: struct Livro NovoLivro; struct Livro LivroQualquer..
-//E ai sim você poderá manipular através do operador ponto os campos desta struct  NovoLivro.ID, LivroQualquer.Editora, etc
+
+/*Criada um struct, um modelo para criação de objetos deste tipo
+Importante destacar que até aqui no final */
 struct Livro
 {
 	int ID;
 	std::string Titulo;
 	std::string Autor;
 	std::string Editora;
-};
+};//aqui não existirá criação de nada na memória RAM, isso ou esta struct é apenas um modelo para criação de outras variáveis
+/*quando fora criada uma variavel do tipo desta struct, o compilador irá usar este molde, este modelo para arrumar e armazenar dados na memória RAM*/
 
 int main()
 {
-	//Criamos um objeto do tipo struct Livro de nome livro..
-	//Poderia ser qualquer nome mas como C++ diferencia maiúsculas de minusculas (Case Sensitive) podemos usar livro pois neste caso Livro é diferente de livro
-	/*assim livro terá um esquema na memória baseado no contido na struct Livro*/
-	struct Livro livro;
-	//Entrada de Dados
+	//Aqui foi criada uma variavel de nome livro(poderia ser outro nome)
+	//como livro é diferente de Livro pode ser feito, mas confunde...
+	/*logo aqui temos a criação na memória RAM de uma variável de nome livro
+	e que será criada a partir do modelo da struct Livro*/
+	//Em c++ podemos retirar a palavra struct ao criar uma variável do tipo struct
+	Livro livro;
+
+	//A partir de agora podemos acessar os campos desta variavel livro atraves da notação ponto(.)
 	std::cout << "***Cadastro de Livro***" << "\n";
 	std::cout << "Digite ID do Livro: ";
 	std::cin >> livro.ID;
 
-	std::cout << "\nDigite o Título do Livro: ";
-	//Colocar desta forma com getline
-	//vai ignorar o enter que veio da leitura do ID
+	std::cout << "\nDigite o Titulo do livro: ";
 	std::cin.ignore();
 	std::getline(std::cin, livro.Titulo);
 
 	std::cout << "\nDigite o Autor do Livro: ";
 	std::getline(std::cin, livro.Autor);
 
-	std::cout << "\nDigite A Editora do Livro: ";
+	std::cout << "\nDigite a Editor do Livro: ";
 	std::getline(std::cin, livro.Editora);
 
-	//Saida de Dados
 	std::cout << "ID: " << livro.ID << "\n";
 	std::cout << "Titulo: " << livro.Titulo << "\n";
 	std::cout << "Autor: " << livro.Autor << "\n";
