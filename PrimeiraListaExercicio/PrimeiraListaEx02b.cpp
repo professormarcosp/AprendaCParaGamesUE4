@@ -13,3 +13,5 @@ int main()
 	system("PAUSE");
 	return 0;
 }
+
+//A linha poderia também ser assim: std::cout << "Vou" << "\n" << "aprender" << "\n" << "a" << "\n" << "programar" << "\n" << "na" << std::endl << "Linguagem C++" << "\n";
