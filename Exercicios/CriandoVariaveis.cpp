@@ -11,14 +11,20 @@ Obs: lembre-se de colocar o comando para Pausar a Tela
 */
 int main()
 {
-	
+	//Cria um local na memória do tipo inteiro (int) de nome NumComputadores e coloca neste local o valor 100
 	int NumComputadores = 100;
+	//Cria um local na memória do tipo inteiro (int) de nome SerialComputadores e coloca neste local o valor 11111
 	int SerialComputadores = 11111;
-	std::cout << "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" << std::endl;
-	std::cout << "Valor de NumComputadores = " << NumComputadores << "\n";
-	std::cout << "Valor de SerialComputadores = " << SerialComputadores << "\n";
-	std::cout << "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" << std::endl;
-	
+
+	//Coloca na tela cifrões
+	std::cout << "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" << std::endl;
+	//Coloca na tela uma tabulação com \t e depois o texto Valor de NumComputadores = e depois coloca o valor da variável NumComputadores na tela e dá uma quebra de linha com std::endl
+	std::cout << "\tValor de NumComputadores = " << NumComputadores << std::endl;
+	//Coloca na tela uma tabulação com \t e depois o texto Valor de SerialComputadores = e depois coloca o valor da variável SerialComputadores na tela e dá uma quebra de linha com std::endl
+	std::cout << "\tValor de SerialComputadores = " << SerialComputadores << std::endl;
+	//Coloca na tela cifrões
+	std::cout << "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" << std::endl;
+
 	system("PAUSE");
 	return 0;
 }
