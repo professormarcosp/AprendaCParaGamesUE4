@@ -18,13 +18,13 @@ int Multiplicacao(int num1, int num2)
 
 float Divisao(int num1, int num2)
 {
-	//faz uma divisao inteira pois num1 e num2 são inteiros
+	//faz uma divisao inteira pois num1 e num2 sÃ£o inteiros
 	//mas podemos fazer cast
 	//agora estamos indicando que o inteiro deve ser um float
 	return (float)num1 / (float)num2;
 }
 
-int Potencia(int num1, int num2)
+double Potencia( double num1, double num2)
 {
 	return pow(num1, num2);
 }
