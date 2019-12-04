@@ -3,9 +3,9 @@
 
 int main()
 {
-	// \t insere uma tabulação 
+	// \t insere uma tabulaÃ§Ã£o 
 	std::cout << "Tipo\t\t Minimo\t\t Maximo\n\n";
-	
+
 	std::cout << "bool\t\t"
 		<< +std::numeric_limits<bool>::min() << '\t' << '\t'
 		<< +std::numeric_limits<bool>::max() << '\n';
@@ -19,8 +19,8 @@ int main()
 		<< +std::numeric_limits<short>::min() << '\t' << '\t'
 		<< +std::numeric_limits<short>::max() << '\n';
 	std::cout << "unsigned short\t"
-		<< +std::numeric_limits<short int>::min() << '\t' << '\t'
-		<< +std::numeric_limits<short int>::max() << '\n';
+		<< +std::numeric_limits<unsigned short>::min() << '\t' << '\t'
+		<< +std::numeric_limits<unsigned short>::max() << '\n';
 	std::cout << "int\t\t"
 		<< +std::numeric_limits<int>::min() << '\t' << '\t'
 		<< +std::numeric_limits<int>::max() << '\n';
