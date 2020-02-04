@@ -30,7 +30,7 @@ int main()
 	time_t HoraAtual = time(0);
 
 	/*Função localtime
-	 recebe tempo em segundos de uma variável do tipo time_t, converte para o tempo local, armazena os dados na struct e retorna um ponteiro para uma struct do tipo tm com os dados locais.*/
+	 recebe tempo em segundos de uma variável do tipo time_t, converte para o tempo local, armazena os dados na struct e retorna um ponteiro para uma struct do tipo tm com os dados locais.
 	tm* MinhaHora = localtime(&HoraAtual);
 	std::cout << "\nHora: " << MinhaHora->tm_hour << ":" << MinhaHora->tm_min << ":" << MinhaHora->tm_sec;
 	std::cout << "\nDia: " << MinhaHora->tm_mday;
