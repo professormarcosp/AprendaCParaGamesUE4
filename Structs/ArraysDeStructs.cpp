@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <tchar.h>
 
 struct Livro
 {
@@ -11,6 +12,14 @@ struct Livro
 
 int main()
 {
+	/*Colocaboração Do Aluno Marcos Ranes de Oliveira no tópico 
+	https://www.udemy.com/course/cmaismaisbasico/learn/#questions/9368459
+	*/
+	system("chcp 1252 > nul");
+	_tsetlocale(LC_ALL,_T("Portuguese"));
+	//veja explicação de system("chcp 1252 > nul");  em https://www.udemy.com/course/cmaismaisbasico/learn/#questions/9360733
+	
+	
 	struct Livro livro[5];
 
 	std::cout << "***Cadastro de Livros***" << "\n";
