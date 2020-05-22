@@ -22,13 +22,13 @@ int main()
 		<< +std::numeric_limits<unsigned short>::min() << '\t' << '\t'
 		<< +std::numeric_limits<unsigned short>::max() << '\n';
 	std::cout << "int\t\t"
-		<< +std::numeric_limits<int>::min() << '\t' << '\t'
+		<< +std::numeric_limits<int>::min() << '\t'
 		<< +std::numeric_limits<int>::max() << '\n';
 	std::cout << "unsigned int\t"
 		<< +std::numeric_limits<unsigned int>::min() << '\t' << '\t'
 		<< +std::numeric_limits<unsigned int>::max() << '\n';
 	std::cout << "long int\t"
-		<< +std::numeric_limits<long int>::min() << '\t' << '\t'
+		<< +std::numeric_limits<long int>::min() << '\t'
 		<< +std::numeric_limits<long int>::max() << '\n';
 	std::cout << "unsigned long int "
 		<< +std::numeric_limits<unsigned long int>::min() << '\t' << '\t'
