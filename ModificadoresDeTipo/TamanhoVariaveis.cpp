@@ -1,3 +1,5 @@
+/*Código alterado devido a excelente contribuição do Aluno Thiago Castro de meu curso na UDEMUY que indicou que a saída estava incorreta para os modificadores unsigned
+Fiz a alteração e agora está OK*/
 #include <limits>
 #include <iostream>
 
