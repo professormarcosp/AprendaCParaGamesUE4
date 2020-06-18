@@ -33,6 +33,8 @@ int main()
 	AlterarDados(Aluno02);
 	std::cout << "\nDEPOIS DE MODIFICAR COM PONTEIROS \n";
 	MostrarDados(Aluno02);
+	delete Aluno02; /* Linha colocada após contribuição de Daniel Silva de Souza que é aluno do meu curso 
+	aprendendo programação básica e avançada com Linguagem C++ n Udemy*/
 	system("PAUSE");
 	return 0;
 }
