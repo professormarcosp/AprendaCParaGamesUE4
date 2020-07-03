@@ -37,7 +37,7 @@ bool Conta::Sacar(double Valor)
 	//Se o valor do Saldo no Objeto for menor que o valor a ser sacado, ele não poderá sacar
 	if (Saldo < Valor)
 	{
-		std::cout << "\Saldo Insuficiente!\n";
+		std::cout << "\nSaldo Insuficiente!\n";
 		std::cout << "Seu Saldo Atual: R$" << ConsultarSaldo() << "\n";
 		return false;
 	}
