@@ -3,8 +3,8 @@
 #include <string>
 
 //este é o arquivo .h é onde existem apenas as declarações dos atributos e métodos da classe. 
-Aqui não existem as definições, implementações das funções, pois isso será feito no arquivo .cpp. 
-É a separação do O QUÊ (.h) do COMO (.cpp)
+//Aqui não existem as definições, implementações das funções, pois isso será feito no arquivo .cpp. 
+//É a separação do O QUÊ (.h) do COMO (.cpp)
 
 class Conta
 {
