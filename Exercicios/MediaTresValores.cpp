@@ -8,9 +8,9 @@ int main()
 
 	std::cout << "Digite o Primeiro Número: ";
 	std::cin >> Num1;
-	std::cout << "Digite o Primeiro Número: ";
+	std::cout << "Digite o Segundo Número: ";
 	std::cin >> Num2;
-	std::cout << "Digite o Primeiro Número: ";
+	std::cout << "Digite o Terceiro Número: ";
 	std::cin >> Num3;
 
 	Media = (Num1 + Num2 +  Num3) / 3;
