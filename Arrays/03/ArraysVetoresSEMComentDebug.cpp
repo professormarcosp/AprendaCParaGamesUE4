@@ -1,6 +1,8 @@
 
+/*
 Professor Marcos Pacheco (Mestre em Computação)
-[Aprenda a programar! Acesse agora:] (https://www.udemy.com/course/cmaismaisbasico/?referralCode=956A556D144A0F4D36EC)
+Aprenda a programar! Acesse agora: https://www.udemy.com/course/cmaismaisbasico/?referralCode=956A556D144A0F4D36EC
+*/
 
 
 #include <iostream>
