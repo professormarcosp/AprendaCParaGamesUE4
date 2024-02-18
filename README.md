@@ -2,7 +2,7 @@
 Repositório de Códigos Fontes Do Curso Programação com Linguagem C++ do Básico ao Nível Avançado do Professor  Marcos Pacheco
 Quer Aprender C++ Aproveite e se inscreva em: https://www.udemy.com/cmaismaisbasico/
 
-*****ATENÇÃO: USE O CUPOM  GITHUB1999  E PAGUE APENAS R$22,90 (Oferta válida por tempo limitado)*****
+*****ATENÇÃO: USE O CUPOM  GITHUB1999  E PAGUE APENAS R$24,90 (Oferta válida por tempo limitado)*****
 
 Este curso é destinado para Iniciantes Totais em programação com C++  e que desejam ir do básico até o avançado nesta poderosa linguagem de programação!
 
