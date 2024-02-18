@@ -1,3 +1,9 @@
+/*
+Professor Marcos Pacheco (Mestre em Computação)
+Curso: Aprendendo programação básica e avançada com Linguagem C++
+Acesse agora: https://www.udemy.com/course/cmaismaisbasico/?referralCode=956A556D144A0F4D36EC
+*/
+
 #include <iostream>
 #include <locale>
 /*Exercício Soma De 10 Números */
