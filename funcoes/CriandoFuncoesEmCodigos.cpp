@@ -1,5 +1,3 @@
-/*Atenção Código modificado, veja as instruções dos motivos como recurso anexo a aula
-Agradecimento ao aluno Anderson Cardoso que identificou o erro*/
 #include <iostream>
 #include <locale.h>
 
